@@ -17,30 +17,23 @@
   display: table;
 }
 
-
 </style>
 
-<p>The Dyatlov Pass incident was an event in which nine Russian hikers died in the northern Ural Mountains between
- 1 and 2 February 1959, in uncertain circumstances. Here, we take a look at the weather conditions surrounding the event. The following images 
-show the values of different meteorological variables, averaged over a grid cell with centerpoint at latitude 61.75 and longitude 59.5 (approximately 3km from the site of the tent) and size of approximately 13*26km.
-. The left image shows data from january to the end of march and right image at 1-2 February 1959. The time step is one hour for both columns. 
-The red color on the left image signifies 1-2 February.<br><br> 
-We have used the data from ERA5 hourly data on single levels from 1950 to 1978 (preliminary version), which is open to 
-everyone: <a href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-preliminary-back-extension?tab=overview">https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-preliminary-back-extension?tab=overview</a>. 
-The resolution of this data is 0.25 degrees. I am yet to find data from closest synoptic station from this time period, in order 
-to compare the measured data with reanalysis data and assess how accurate the following images really are. I can add more single and pressure level variables later.</p>
+<p>The following graphs show the number of days between target Sentinel-2 tile and the latest (closest in time) clear tile from the same place. A <b>target tile</b> is a 
+512x512px area cropped out from the full Sentinel-2 product, which dates from july to november. It is not 
+distinguished whether the target tile itself is cloudy or clear. A clear tile is a cloudless 512x512px tile from the period April to November.<br><br>
+All the Sentinel-2 products from April to November from a given year were downloaded, predicted with kappamask and cropped into tiles. The pipeline and cloud prediction were
+  fully automatic. 
+</p>
 <br>
-<h2>Temperature at 2 m height</h2>
+<h2>All data</h2>
 <div class="row">
   <div class="column">
-    <img src="images/2m_temperature.png"style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images/2m_temperature_focus.png" style="width:100%">
+    <img src="https://raw.githubusercontent.com/heidotrofimov/heidotrofimov.github.io/main/images/alldata.png"style="width:100%">
   </div>
 </div>
-
-<h2>Mean sea level pressure</h2>
+<p>The above data was put together from three locations - one in Estonia, one in Latvia and one in Poland.
+<h2>Results for T35VME (Estonia):</h2>
 <div class="row">
   <div class="column">
     <img src="images/mean_sea_level_pressure.png"style="width:100%">
