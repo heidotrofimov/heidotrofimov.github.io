@@ -15,6 +15,7 @@
   content: "";
   clear: both;
   display: table;
+  text-align: center;
 }
 
 </style>
@@ -23,36 +24,36 @@
 512x512px area cropped out from the full Sentinel-2 product, which dates from july to november. It is not 
 distinguished whether the target tile itself is cloudy or clear. A clear tile is a cloudless 512x512px tile from the period April to November.<br><br>
 All the Sentinel-2 products from April to November from a given year were downloaded, predicted with kappamask and cropped into tiles. The pipeline and cloud prediction were
-  fully automatic. 
+  fully automatic. <br><br>The left and right panel of eah image show the same information, but the right one is in accumulated mode.
 </p>
 <br>
 <h2>All data</h2>
 <div class="row">
-  <div class="column">
+  
     <img src="https://raw.githubusercontent.com/heidotrofimov/heidotrofimov.github.io/main/images/alldata.png"style="width:100%">
-  </div>
+
 </div>
 <p>The above data was put together from three locations - one in Estonia, one in Latvia and one in Poland.
 <h2>Results for T35VME (Estonia):</h2>
 <div class="row">
-  <div class="column">
+  
     <img src="https://raw.githubusercontent.com/heidotrofimov/heidotrofimov.github.io/main/images/T35VME_allyears.png" style="width:100%">
-  </div>
+
 </div>
 
 <h2>Results for T35VMC (Latvia)</h2>
 <div class="row">
-  <div class="column">
+
     <img src="https://raw.githubusercontent.com/heidotrofimov/heidotrofimov.github.io/main/images/T35VMC_allyears.png" style="width:100%">
-  </div>
+
 </div>
 
 <h2>Results for T34UED (Poland)</h2>
 <p>This parameter is the maximum wind gust at the specified time, at a height of ten metres above the surface of the Earth. The WMO defines a wind gust as the maximum of the wind averaged over 3 second intervals. This duration is shorter than a model time step, and so the ECMWF Integrated Forecasting System (IFS) deduces the magnitude of a gust within each time step from the time-step-averaged surface stress, surface friction, wind shear and stability. Care should be taken when comparing model parameters with observations, because observations are often local to a particular point in space and time, rather than representing averages over a model grid box.</p>
 <div class="row">
-  <div class="column">
+
     <img src="https://raw.githubusercontent.com/heidotrofimov/heidotrofimov.github.io/main/images/T34UED_allyears.png" style="width:100%">
-  </div>
+
 </div>
 <p>The data also included two years - 2020 and 2018, which showed different results. However, only about half of 2018 products were found in creo, so it may give skewed 
   image. I want to add 2019 also for comparison, this should be ready in few days.</p>
